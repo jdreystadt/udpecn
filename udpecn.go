@@ -62,7 +62,7 @@ func main() {
 	c5Ticker := time.NewTicker(5 * time.Second)
 	c5Timer := c5Ticker.C
 
-	// Parse command line
+	// Parse command line for all entries
 	flag.Parse()
 	// Open network ports
 	outFirstPort, inFirstPort, error := openPorts(*fport, *dest)
